@@ -2,19 +2,43 @@ header {
     text-align: center;
 }
 
-section h2 {
-    text-align: center;
+main {
+    padding: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    margin: 0 0 20px 0;
 }
 
 img {
+    display: block;
+    margin: auto;
     max-width: 100%;
     height: auto;
+    align-content:center;
+    object-fit: cover;
 }
 
-section{
-    padding: 15px;
-    border-radius: 20px;
-    margin-bottom: 30px;
+.fila-productos-servicios {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.fila-productos-servicios article h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* arriba, derecha, abajo, izquierda*/
+ul {
+    margin: 20px 0 20px -20px;
 }
 
 .historia{
@@ -27,20 +51,6 @@ section{
 
 .productoServicios {
     background-color: rgb(176, 114, 247);
-}
-
-
-.fila-superior {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-.fila-productos-servicios {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    align-items: start;
 }
 
 
