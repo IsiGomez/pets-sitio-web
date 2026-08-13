@@ -6,6 +6,11 @@ section h2 {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 section{
     padding: 15px;
     border-radius: 20px;
