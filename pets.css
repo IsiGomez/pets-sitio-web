@@ -15,10 +15,19 @@ h2 {
     margin: 0 0 20px 0;
 }
 
-img {
+.imgjuntos {
     display: block;
     margin: auto;
     max-width: 100%;
+    height: auto;
+    align-content:center;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 60%;
     height: auto;
     align-content:center;
     object-fit: cover;
