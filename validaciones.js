@@ -38,9 +38,9 @@ formCotizacion.addEventListener('submit', function (event) {
     }
 
     if (esValido) {
+        this.reset();
         // alert("¡Solicitud enviada con éxito! Te contactaremos pronto.");
         mensajeExitoso.textContent = "¡Solicitud enviada con éxito! Te contactaremos pronto.";
-        this.reset();
     }
 });
 

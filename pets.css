@@ -165,8 +165,9 @@ ul {
     min-height: 1.2em;
 }
 
-.exito {
-    margin-top: 15px;
+#mensajeExitoso {
+    display: block;
+    margin-top: 20px;
     text-align: center;
     color: green;
     font-weight: bold;
