@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>productos-servicios</title>
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+
+        <link rel="stylesheet" href="pets.css">
+    </head>
+
+
+    <body style="background-color: #f2ffa8;">
+        <header>
+            <h1>Productos y servicios</h1>
+        </header>
+
+        <nav class="links">
+            <ul>
+                <li><a href="inicio.html">🐾 Inicio</a></li>
+                <li><a href="historia.html">📖 Historia</a></li>
+                <li><a href="sucursal.html">🏠 Sucusal</a></li>
+            </ul>
+        </nav>
+
+        <main class="productoServicios">
+            <h2>¿Qué ofrecemos?</h2>
+            <p>
+                Ofrecemos una variadad de productos tales como alimento, juguetes, accesorios y otros mas, 
+                ademas de tambien contar con servicios de peluqueria y veterinaria. 
+                Todas estas cosas ofreciendolos a precios accesibles.
+            </p>
+
+            <br>
+
+            <section class="fila-productos-servicios">
+                <article>
+                    <h2>Productos</h2>
+                    <img class="imgjuntos" src="img/productos-completos.jpg" alt="Muestra de productos a comprar">
+                
+                    <ul>
+                        <li>Alimento de perro marca pedigre de 255g</li>
+                        <li>Camarron de premia para tortuga</li>
+                        <li>Alimento de gato marca cat chow de 255g</li>
+                        <li>Pelota de tenis</li>
+                        <li>Pelota con sonido</li>
+                        <li>Plato de comida</li>
+                        <li>Manta</li>
+                    </ul>
+
+                </article>
+
+                <article>
+                    <h2>Servicios</h2>
+
+                    <img class="imgjuntos" src="img/servicios.jpg" alt="Muestra de servicios ofrecidos">
+
+                    <ul>
+                        <li>Peluqueria</li>
+                        <li>Veterinaria</li>
+                        <li>Corte de uñas</li>
+                        <li>Limpieza de oidos</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="cotizacion">
+                <div class="card-cotizacion">
+                    <h2>Solicita una cotización o reserva una hora</h2>
+                    <p>
+                        ¿Tienes dudas sobre un producto o quieres agendar una cita veterinaria o de peluquería? 
+                        Completa el siguiente formulario. 
+                        <br>
+                        Déjanos tus datos y te contactaremos lo antes posible para poder brindarte toda la información que necesitas.
+                    </p>
+
+                    <form id="formCotizacion" novalidate>
+                        <div class="campoCotizacion">
+                            <label for="nombre">Nombre completo:</label>
+                            <br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ejem: Juan Pérez" required>
+                            <span class="error" id="errorNombre"></span>
+                        </div>
+
+                        <div class="campoCotizacion">
+                            <label for="email">Correo electrónico:</label>
+                            <br>
+                            <input type="email" id="email" name="email" placeholder="ju.perez@gmail.com" required>
+                            <span class="error" id="errorEmail"></span>
+                        </div>
+
+                        <div class="campoCotizacion">
+                            <label for="interes">¿Qué te interesa?</label>
+                            <br>
+                            <select id="interes" name="interes" required>
+                                <option value="">Selecciona una opción...</option>
+                                <option value="productos">Cotizar Productos</option>
+                                <option value="peluqueria">Reserva Peluquería</option>
+                                <option value="veterinaria">Reserva Veterinaria</option>
+                            </select>
+                            <span class="error" id="errorInteres"></span>
+                        </div>
+                        
+                        <div class="botones">
+                            <button class="boton" type="submit">
+                                Enviar Solicitud
+                            </button>
+                            
+                            <button class="boton" type="reset">
+                                Limpiar Formulario
+                            </button>
+                        </div>
+                        
+                        <span id="mensajeExitoso"></span>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://es.scribd.com/document/735219354/proyecto-animales-callejeros">Proyecto para niños para aprender sobre el cuidado de los perros callejeros</a>
+            <a href="https://www.anb.cl/documentos_sitio/19250_Manual_Prim_auxilios_mascotas.pdf">Primeros auxilios para mascotas</a>
+            <a href="https://asdigital.minsal.cl/faq/index.php?sid=993280&lang=es&action=artikel&cat=33&id=430&artlang=es">Informe sanitario para centros de mantención temporal de animales</a>
+            <a href="https://www.bcn.cl/leychile/navegar?idNorma=1106037">Ley de tenencia responsable</a>
+        </footer>
+
+        <script src="validaciones.js"></script>
+    </body>
+
+</html>
