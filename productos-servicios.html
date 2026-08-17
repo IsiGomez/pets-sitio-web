@@ -34,7 +34,7 @@
 
             <br>
 
-            <div class="fila-productos-servicios">
+            <section class="fila-productos-servicios">
                 <article>
                     <h2>Productos</h2>
                     <img class="imgjuntos" src="img/productos-completos.jpg" alt="Muestra de productos a comprar">
@@ -63,7 +63,59 @@
                         <li>Limpieza de oidos</li>
                     </ul>
                 </article>
-            </div>
+            </section>
+
+            <section class="cotizacion">
+                <div class="card-cotizacion">
+                    <h2>Solicita una cotización o reserva una hora</h2>
+                    <p>
+                        ¿Tienes dudas sobre un producto o quieres agendar una cita veterinaria o de peluquería? 
+                        Completa el siguiente formulario. 
+                        <br>
+                        Déjanos tus datos y te contactaremos lo antes posible para poder brindarte toda la información que necesitas.
+                    </p>
+
+                    <form id="formCotizacion" novalidate>
+                        <div class="campoCotizacion">
+                            <label for="nombre">Nombre completo:</label>
+                            <br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ejem: Juan Pérez" required>
+                            <span class="error" id="errorNombre"></span>
+                        </div>
+
+                        <div class="campoCotizacion">
+                            <label for="email">Correo electrónico:</label>
+                            <br>
+                            <input type="email" id="email" name="email" placeholder="ju.perez@gmail.com" required>
+                            <span class="error" id="errorEmail"></span>
+                        </div>
+
+                        <div class="campoCotizacion">
+                            <label for="interes">¿Qué te interesa?</label>
+                            <br>
+                            <select id="interes" name="interes" required>
+                                <option value="">Selecciona una opción...</option>
+                                <option value="productos">Cotizar Productos</option>
+                                <option value="peluqueria">Reserva Peluquería</option>
+                                <option value="veterinaria">Reserva Veterinaria</option>
+                            </select>
+                            <span class="error" id="errorInteres"></span>
+                        </div>
+
+                        <div class="botones">
+                            <button class="boton" type="submit">
+                                Enviar Solicitud
+                            </button>
+
+                            <button class="boton" type="reset">
+                                Limpiar Formulario
+                            </button>
+                        </div>
+
+                        <p class="exito" id="mensajeExitoso"></p>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -72,6 +124,8 @@
             <a href="https://asdigital.minsal.cl/faq/index.php?sid=993280&lang=es&action=artikel&cat=33&id=430&artlang=es">Informe sanitario para centros de mantención temporal de animales</a>
             <a href="https://www.bcn.cl/leychile/navegar?idNorma=1106037">Ley de tenencia responsable</a>
         </footer>
+
+        <script src="validaciones.js"></script>
     </body>
 
 </html>

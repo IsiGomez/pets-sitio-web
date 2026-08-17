@@ -102,12 +102,100 @@ ul {
 }
 
 
+.cotizacion {
+    margin-top: 40px;
+    padding: 30px 15px;
+    background-color: #83ecf4;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-cotizacion {
+    background-color: #ffffff;
+    max-width: 550px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cotizacion h2 {
+    text-align: center;
+    color: #1800a2;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.campoCotizacion {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campoCotizacion label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #1800a2;
+    font-size: 0.95rem;
+}
+
+.campoCotizacion input,
+.campoCotizacion select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.campoCotizacion input:focus,
+.campoCotizacion select:focus {
+    outline: none;
+    border-color: #1800a2;
+}
+
+.error {
+    color: #d9534f;
+    font-size: 0.85em;
+    display: block;
+    margin-top: 4px;
+    min-height: 1.2em;
+}
+
+.exito {
+    margin-top: 15px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.boton {
+    background-color: #1800a2; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    flex: 1;
+    padding: 15px;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+
 footer {
     margin-top: 20px;
     background-color: rgb(253, 176, 235);
     padding: 24px;
     border-top: 4px solid rgb(246, 150, 209);
-    align-items: start;
 }
 
 footer a{
